@@ -1,5 +1,7 @@
-﻿// Crear un nuevo hilo y especificar la 
-// función que ejecutará
+﻿
+
+
+// Crear un nuevo hilo y especificar la función que ejecutará
 
 Thread t1 = new(new ThreadStart(FuncionHilo));
 

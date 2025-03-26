@@ -1,4 +1,7 @@
-﻿public class ThreadSafeFileRepository : IFileRepository
+﻿
+
+
+public class ThreadSafeFileRepository : IFileRepository
 {
     private readonly string _directoryPath;
     private readonly object _lockObj = new object();
@@ -11,10 +14,10 @@
             Directory.CreateDirectory(_directoryPath);
         }
     }
-
     public FileData ReadFile(string fileName)
     {
-        string filePath = Path.Combine(_directoryPath, fileName);
+        string filePath = Path
+            .Combine(_directoryPath, fileName);
 
         lock (_lockObj)
         {
@@ -27,20 +30,18 @@
                 };
             }
             else
-            {
-                return null;
-            } 
+                return null; 
         }
     }
 
     public void SaveFile(FileData fileData)
     {
-        string filePath = Path.Combine(_directoryPath,
-            fileData.FileName);
+        string filePath = 
+            Path.Combine(_directoryPath, fileData.FileName);
         lock (_lockObj)
         {
-            File.WriteAllText(filePath, fileData.Content);
-        }        
+            File.WriteAllText(filePath, fileData.Content); 
+        }
     }
 }
 

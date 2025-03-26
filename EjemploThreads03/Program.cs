@@ -1,4 +1,7 @@
-﻿int contador = 0;
+﻿
+
+
+int contador = 0;
 object bloqueo = new object();
 
 // Crear varios hilos que incrementan el contador
@@ -10,7 +13,7 @@ for (int i = 0; i < 5; i++)
     hilos[i].Start();
 }
 
-// Esperar a que todos los hilos terminen
+// Esperar que todos los hilos terminen
 foreach (Thread t in hilos)
 {
     t.Join();
@@ -24,7 +27,7 @@ void IncrementarContador()
     {
         lock (bloqueo)
         {
-            contador++;
+            contador++;  
         }
     }
 }
