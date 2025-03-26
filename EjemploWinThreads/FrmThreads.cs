@@ -24,22 +24,29 @@ namespace EjemploWinThreads
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            hilo1 = new Thread(new ThreadStart(Proceso1));
-            hilo2 = new Thread(new ThreadStart(Proceso2));
-            hilo3 = new Thread(new ThreadStart(Proceso3));
+            hilo1 = new Thread(new ParameterizedThreadStart(Proceso));
+            hilo2 = new Thread(new ParameterizedThreadStart(Proceso));
+            hilo3 = new Thread(new ParameterizedThreadStart(Proceso));
 
-            hilo1.Start();
-            hilo2.Start();
-            hilo3.Start();
+            hilo1.Start(new { ProgressBar = pb1, Delay = 70 });
+            hilo2.Start(new { ProgressBar = pb2, Delay = 40 });
+            hilo3.Start(new { ProgressBar = pb3, Delay = 100 });
         }
 
-        private void Proceso()
+        private void Proceso(object? parametro)
         {
+            if (parametro is not { } param) return;
+            var pb = param.GetType().GetProperty("ProgressBar")?.GetValue(param) as ProgressBar;
+            var delay = (int?)param.GetType().GetProperty("Delay")?.GetValue(param) ?? 0;
+
+            if (pb == null || delay <= 0) return;
+
             for (int i = 0; i <= 100; i++)
             {
                 otroDelegado MD = new otroDelegado(Actualizar);
-                Invoke(MD, new object[] { pb1, i });
-                Thread.Sleep(70);
+                Invoke(MD, new object[] { pb, i });
+                //Invoke(new Action(() => pb.Value = i));
+                Thread.Sleep(delay);
             }
         }
 
