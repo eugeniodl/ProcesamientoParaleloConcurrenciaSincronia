@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35913.81 d17.13
+VisualStudioVersion = 17.13.35913.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploThreads01", "EjemploThreads01\EjemploThreads01.csproj", "{F0074B0F-28FA-4012-B508-CA0F166D710C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemploThreads01", "EjemploThreads01\EjemploThreads01.csproj", "{F0074B0F-28FA-4012-B508-CA0F166D710C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploThreads02", "EjemploThreads02\EjemploThreads02.csproj", "{9347388B-DC37-44A4-B39B-ED2B6FB32BA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemploThreads02", "EjemploThreads02\EjemploThreads02.csproj", "{9347388B-DC37-44A4-B39B-ED2B6FB32BA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploThreads03", "EjemploThreads03\EjemploThreads03.csproj", "{EA0CB8B8-5D9F-44F5-B5D8-65CC6ED60382}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemploThreads03", "EjemploThreads03\EjemploThreads03.csproj", "{EA0CB8B8-5D9F-44F5-B5D8-65CC6ED60382}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploThreads04", "EjemploThreads04\EjemploThreads04.csproj", "{9403A4D1-28D9-4F7A-9952-10B35CDE69DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemploThreads04", "EjemploThreads04\EjemploThreads04.csproj", "{9403A4D1-28D9-4F7A-9952-10B35CDE69DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploWinThreads", "EjemploWinThreads\EjemploWinThreads.csproj", "{5261F55A-19EE-833D-3714-82C73FAE3E34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9403A4D1-28D9-4F7A-9952-10B35CDE69DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9403A4D1-28D9-4F7A-9952-10B35CDE69DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9403A4D1-28D9-4F7A-9952-10B35CDE69DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5261F55A-19EE-833D-3714-82C73FAE3E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5261F55A-19EE-833D-3714-82C73FAE3E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5261F55A-19EE-833D-3714-82C73FAE3E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5261F55A-19EE-833D-3714-82C73FAE3E34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
