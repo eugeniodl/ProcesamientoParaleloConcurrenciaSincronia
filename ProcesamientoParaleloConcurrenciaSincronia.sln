@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploWinTasks", "EjemploW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo01ProgramacionAsincrona", "Ejemplo01ProgramacionAsincrona\Ejemplo01ProgramacionAsincrona.csproj", "{3728FB2F-58F9-464D-B934-8D55E0242E89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo02ProgramacionAsincrona", "Ejemplo02ProgramacionAsincrona\Ejemplo02ProgramacionAsincrona.csproj", "{3C38F3B7-F554-5C94-595F-5AD7082153E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAsyncAwait", "WinAsyncAwait\WinAsyncAwait.csproj", "{5E6D817C-5BFF-3074-E9C5-C1E4A45BE4AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{3728FB2F-58F9-464D-B934-8D55E0242E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3728FB2F-58F9-464D-B934-8D55E0242E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3728FB2F-58F9-464D-B934-8D55E0242E89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C38F3B7-F554-5C94-595F-5AD7082153E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C38F3B7-F554-5C94-595F-5AD7082153E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C38F3B7-F554-5C94-595F-5AD7082153E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C38F3B7-F554-5C94-595F-5AD7082153E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E6D817C-5BFF-3074-E9C5-C1E4A45BE4AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E6D817C-5BFF-3074-E9C5-C1E4A45BE4AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E6D817C-5BFF-3074-E9C5-C1E4A45BE4AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E6D817C-5BFF-3074-E9C5-C1E4A45BE4AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
