@@ -28,56 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnIniciar = new System.Windows.Forms.Button();
-            this.pb1 = new System.Windows.Forms.ProgressBar();
-            this.pb2 = new System.Windows.Forms.ProgressBar();
-            this.pb3 = new System.Windows.Forms.ProgressBar();
-            this.SuspendLayout();
+            btnIniciar = new Button();
+            pb1 = new ProgressBar();
+            pb2 = new ProgressBar();
+            pb3 = new ProgressBar();
+            SuspendLayout();
             // 
             // btnIniciar
             // 
-            this.btnIniciar.Location = new System.Drawing.Point(12, 103);
-            this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(115, 64);
-            this.btnIniciar.TabIndex = 0;
-            this.btnIniciar.Text = "Iniciar";
-            this.btnIniciar.UseVisualStyleBackColor = true;
-            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
+            btnIniciar.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnIniciar.Location = new Point(25, 59);
+            btnIniciar.Name = "btnIniciar";
+            btnIniciar.Size = new Size(117, 53);
+            btnIniciar.TabIndex = 0;
+            btnIniciar.Text = "Iniciar";
+            btnIniciar.UseVisualStyleBackColor = true;
+            btnIniciar.Click += btnIniciar_Click;
             // 
             // pb1
             // 
-            this.pb1.Location = new System.Drawing.Point(160, 43);
-            this.pb1.Name = "pb1";
-            this.pb1.Size = new System.Drawing.Size(347, 43);
-            this.pb1.TabIndex = 1;
+            pb1.Location = new Point(162, 31);
+            pb1.Name = "pb1";
+            pb1.Size = new Size(344, 21);
+            pb1.TabIndex = 1;
             // 
             // pb2
             // 
-            this.pb2.Location = new System.Drawing.Point(160, 114);
-            this.pb2.Name = "pb2";
-            this.pb2.Size = new System.Drawing.Size(347, 43);
-            this.pb2.TabIndex = 2;
+            pb2.Location = new Point(162, 73);
+            pb2.Name = "pb2";
+            pb2.Size = new Size(344, 21);
+            pb2.TabIndex = 2;
             // 
             // pb3
             // 
-            this.pb3.Location = new System.Drawing.Point(160, 185);
-            this.pb3.Name = "pb3";
-            this.pb3.Size = new System.Drawing.Size(347, 43);
-            this.pb3.TabIndex = 3;
+            pb3.Location = new Point(162, 118);
+            pb3.Name = "pb3";
+            pb3.Size = new Size(344, 21);
+            pb3.TabIndex = 3;
             // 
             // FrmThreads
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(529, 260);
-            this.Controls.Add(this.pb3);
-            this.Controls.Add(this.pb2);
-            this.Controls.Add(this.pb1);
-            this.Controls.Add(this.btnIniciar);
-            this.Name = "FrmThreads";
-            this.Text = "FrmThreads";
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(531, 169);
+            Controls.Add(pb3);
+            Controls.Add(pb2);
+            Controls.Add(pb1);
+            Controls.Add(btnIniciar);
+            Name = "FrmThreads";
+            Text = "FrmThreads";
+            ResumeLayout(false);
         }
 
         #endregion
