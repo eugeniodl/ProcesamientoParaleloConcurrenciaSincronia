@@ -1,17 +1,18 @@
-﻿using System.Threading.Tasks;
-
-Coffe coffe = PourCoffe();
+﻿Coffe coffe = PourCoffe();
 Console.WriteLine("Café está listo");
 
-Egg eggTask = FryEggs(2);
+Task<Egg> eggTask = FryEggsAsync(2);
+Egg egg = await eggTask;
 Console.WriteLine("Huevos están listos");
 
-Bacon baconTask = FryBacon(3);
+Task<Bacon> baconTask = FryBaconAsync(3);
+Bacon bacon = await baconTask;
 Console.WriteLine("Jamón está listo");
 
-Toast toastTask = ToastBread(2);
-ApplyButter(toastTask);
-ApplyJam(toastTask);
+Task<Toast> toastTask = ToastBreadAsync(2);
+Toast toast = await toastTask;
+ApplyButter(toast);
+ApplyJam(toast);
 Console.WriteLine("Tostada está lista");
 
 Juice oj = PourOj();
@@ -35,6 +36,49 @@ void ApplyButter(Toast toast)
     Console.WriteLine("Aplicando mantequilla a la tostada");
 }
 
+#region Métodos Asíncronos
+async Task<Toast> ToastBreadAsync(int slices)
+{
+    for (int slice = 0; slice < slices; slice++)
+    {
+        Console.WriteLine("Colocando slice de pan a la tostadora");
+    }
+    Console.WriteLine("Tostando pan...");
+    await Task.Delay(3000);
+    Console.WriteLine("Removiendo pan del tostador");
+
+    return new Toast();
+}
+
+async Task<Bacon> FryBaconAsync(int slices)
+{
+    Console.WriteLine($"colocando {slices} " +
+        $"slices de jamón en el pan");
+    Console.WriteLine("cocinando el primer lado del jamón...");
+    await Task.Delay(3000);
+    for (int slice = 0; slice < slices; slice++)
+    {
+        Console.WriteLine("volteando un slice de jamón");
+    }
+    Console.WriteLine("cocinando el segundo lado del jamón...");
+    await Task.Delay(3000);
+    Console.WriteLine("Sirviendo jamón al plato");
+    return new Bacon();
+}
+
+async Task<Egg> FryEggsAsync(int howMany)
+{
+    Console.WriteLine("Calentando el sartén...");
+    await Task.Delay(3000);
+    Console.WriteLine($"rompiendo {howMany} huevos");
+    Console.WriteLine("cocinando los huevos");
+    await Task.Delay(3000);
+    Console.WriteLine("Sirviendo los huevos al plato");
+    return new Egg();
+}
+#endregion
+
+#region Métodos Síncronos
 Toast ToastBread(int slices)
 {
     for (int slice = 0; slice < slices; slice++)
@@ -73,7 +117,8 @@ Egg FryEggs(int howMany)
     Task.Delay(3000).Wait();
     Console.WriteLine("Sirviendo los huevos al plato");
     return new Egg();
-}
+} 
+#endregion
 
 
 Coffe PourCoffe()
