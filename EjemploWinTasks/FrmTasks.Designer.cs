@@ -28,106 +28,107 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnIniciar = new Button();
-            pb1 = new ProgressBar();
-            pb2 = new ProgressBar();
-            pb3 = new ProgressBar();
-            pb4 = new ProgressBar();
-            txtConteo1 = new TextBox();
-            txtConteo2 = new TextBox();
-            txtConteo3 = new TextBox();
-            txtConteo4 = new TextBox();
-            SuspendLayout();
+            this.btnIniciar = new System.Windows.Forms.Button();
+            this.pb1 = new System.Windows.Forms.ProgressBar();
+            this.pb2 = new System.Windows.Forms.ProgressBar();
+            this.pb3 = new System.Windows.Forms.ProgressBar();
+            this.pb4 = new System.Windows.Forms.ProgressBar();
+            this.txtConteo1 = new System.Windows.Forms.TextBox();
+            this.txtConteo2 = new System.Windows.Forms.TextBox();
+            this.txtConteo3 = new System.Windows.Forms.TextBox();
+            this.txtConteo4 = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
             // 
             // btnIniciar
             // 
-            btnIniciar.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btnIniciar.Location = new Point(38, 31);
-            btnIniciar.Name = "btnIniciar";
-            btnIniciar.Size = new Size(99, 36);
-            btnIniciar.TabIndex = 0;
-            btnIniciar.Text = "Iniciar";
-            btnIniciar.UseVisualStyleBackColor = true;
-            btnIniciar.Click += btnIniciar_Click;
+            this.btnIniciar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnIniciar.Location = new System.Drawing.Point(29, 32);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(125, 37);
+            this.btnIniciar.TabIndex = 0;
+            this.btnIniciar.Text = "Iniciar";
+            this.btnIniciar.UseVisualStyleBackColor = true;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // pb1
             // 
-            pb1.Location = new Point(38, 98);
-            pb1.Name = "pb1";
-            pb1.Size = new Size(100, 23);
-            pb1.TabIndex = 1;
+            this.pb1.Location = new System.Drawing.Point(29, 89);
+            this.pb1.Name = "pb1";
+            this.pb1.Size = new System.Drawing.Size(125, 29);
+            this.pb1.TabIndex = 1;
             // 
             // pb2
             // 
-            pb2.Location = new Point(163, 98);
-            pb2.Name = "pb2";
-            pb2.Size = new Size(100, 23);
-            pb2.TabIndex = 2;
+            this.pb2.Location = new System.Drawing.Point(179, 89);
+            this.pb2.Name = "pb2";
+            this.pb2.Size = new System.Drawing.Size(125, 29);
+            this.pb2.TabIndex = 2;
             // 
             // pb3
             // 
-            pb3.Location = new Point(284, 98);
-            pb3.Name = "pb3";
-            pb3.Size = new Size(100, 23);
-            pb3.TabIndex = 3;
+            this.pb3.Location = new System.Drawing.Point(334, 89);
+            this.pb3.Name = "pb3";
+            this.pb3.Size = new System.Drawing.Size(125, 29);
+            this.pb3.TabIndex = 3;
             // 
             // pb4
             // 
-            pb4.Location = new Point(413, 98);
-            pb4.Name = "pb4";
-            pb4.Size = new Size(100, 23);
-            pb4.TabIndex = 4;
+            this.pb4.Location = new System.Drawing.Point(487, 89);
+            this.pb4.Name = "pb4";
+            this.pb4.Size = new System.Drawing.Size(125, 29);
+            this.pb4.TabIndex = 4;
             // 
             // txtConteo1
             // 
-            txtConteo1.Location = new Point(37, 138);
-            txtConteo1.Multiline = true;
-            txtConteo1.Name = "txtConteo1";
-            txtConteo1.Size = new Size(100, 250);
-            txtConteo1.TabIndex = 5;
+            this.txtConteo1.Location = new System.Drawing.Point(29, 139);
+            this.txtConteo1.Multiline = true;
+            this.txtConteo1.Name = "txtConteo1";
+            this.txtConteo1.Size = new System.Drawing.Size(125, 262);
+            this.txtConteo1.TabIndex = 5;
             // 
             // txtConteo2
             // 
-            txtConteo2.Location = new Point(163, 138);
-            txtConteo2.Multiline = true;
-            txtConteo2.Name = "txtConteo2";
-            txtConteo2.Size = new Size(100, 250);
-            txtConteo2.TabIndex = 6;
+            this.txtConteo2.Location = new System.Drawing.Point(179, 139);
+            this.txtConteo2.Multiline = true;
+            this.txtConteo2.Name = "txtConteo2";
+            this.txtConteo2.Size = new System.Drawing.Size(125, 262);
+            this.txtConteo2.TabIndex = 6;
             // 
             // txtConteo3
             // 
-            txtConteo3.Location = new Point(284, 138);
-            txtConteo3.Multiline = true;
-            txtConteo3.Name = "txtConteo3";
-            txtConteo3.Size = new Size(100, 250);
-            txtConteo3.TabIndex = 7;
+            this.txtConteo3.Location = new System.Drawing.Point(334, 139);
+            this.txtConteo3.Multiline = true;
+            this.txtConteo3.Name = "txtConteo3";
+            this.txtConteo3.Size = new System.Drawing.Size(125, 262);
+            this.txtConteo3.TabIndex = 7;
             // 
             // txtConteo4
             // 
-            txtConteo4.Location = new Point(413, 138);
-            txtConteo4.Multiline = true;
-            txtConteo4.Name = "txtConteo4";
-            txtConteo4.Size = new Size(100, 250);
-            txtConteo4.TabIndex = 8;
+            this.txtConteo4.Location = new System.Drawing.Point(487, 139);
+            this.txtConteo4.Multiline = true;
+            this.txtConteo4.Name = "txtConteo4";
+            this.txtConteo4.Size = new System.Drawing.Size(125, 262);
+            this.txtConteo4.TabIndex = 8;
             // 
             // FrmTasks
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(557, 440);
-            Controls.Add(txtConteo4);
-            Controls.Add(txtConteo3);
-            Controls.Add(txtConteo2);
-            Controls.Add(txtConteo1);
-            Controls.Add(pb4);
-            Controls.Add(pb3);
-            Controls.Add(pb2);
-            Controls.Add(pb1);
-            Controls.Add(btnIniciar);
-            Name = "FrmTasks";
-            Text = "FrmTasks";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(655, 431);
+            this.Controls.Add(this.txtConteo4);
+            this.Controls.Add(this.txtConteo3);
+            this.Controls.Add(this.txtConteo2);
+            this.Controls.Add(this.txtConteo1);
+            this.Controls.Add(this.pb4);
+            this.Controls.Add(this.pb3);
+            this.Controls.Add(this.pb2);
+            this.Controls.Add(this.pb1);
+            this.Controls.Add(this.btnIniciar);
+            this.Name = "FrmTasks";
+            this.Text = "FrmTasks";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

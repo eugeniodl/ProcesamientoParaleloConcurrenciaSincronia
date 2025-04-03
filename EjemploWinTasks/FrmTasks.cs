@@ -25,9 +25,9 @@ namespace EjemploWinTasks
             {
                 Task[] tareas =
                 {
-                    Task.Factory.StartNew(() => 
-                        IncreaseValue(txtConteo1, pb1, 150, 1), 
-                        CancellationToken.None, 
+                    Task.Factory.StartNew(() =>
+                        IncreaseValue(txtConteo1, pb1, 150, 1),
+                        CancellationToken.None,
                         TaskCreationOptions.LongRunning,
                         _scheduler),
                     Task.Factory.StartNew(() =>
@@ -45,10 +45,12 @@ namespace EjemploWinTasks
                         CancellationToken.None,
                         TaskCreationOptions.LongRunning,
                         _scheduler)
+
                 };
                 Task.WaitAll(tareas);
                 MessageBox.Show("Se han terminado todas las tareas");
             }).Start();
+
         }
 
         private void IncreaseValue(TextBox t, ProgressBar p, int r, int c)
@@ -64,7 +66,7 @@ namespace EjemploWinTasks
 
         private void UpdateView(TextBox t, ProgressBar p, int result)
         {
-            if (InvokeRequired)
+            if(InvokeRequired)
             {
                 Invoke(new Action(() => UpdateView(t, p, result)));
             }
