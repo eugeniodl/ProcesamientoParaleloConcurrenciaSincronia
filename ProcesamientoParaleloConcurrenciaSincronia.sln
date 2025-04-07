@@ -29,6 +29,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo02ProgramacionAsincr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAsyncAwait", "WinAsyncAwait\WinAsyncAwait.csproj", "{5E6D817C-5BFF-3074-E9C5-C1E4A45BE4AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploProcesamientoParalelo01", "EjemploProcesamientoParalelo01\EjemploProcesamientoParalelo01.csproj", "{D0AE07F2-8CE3-49C9-0AD0-44138A810128}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploProcesamientoParalelo02", "EjemploProcesamientoParalelo02\EjemploProcesamientoParalelo02.csproj", "{A1045ECB-3324-B32B-069E-89BE9C921E51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploProcesamientoParalelo03", "EjemploProcesamientoParalelo03\EjemploProcesamientoParalelo03.csproj", "{1A9E9866-3ED8-DFDA-E563-62434FC3891C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +93,18 @@ Global
 		{5E6D817C-5BFF-3074-E9C5-C1E4A45BE4AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E6D817C-5BFF-3074-E9C5-C1E4A45BE4AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E6D817C-5BFF-3074-E9C5-C1E4A45BE4AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0AE07F2-8CE3-49C9-0AD0-44138A810128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0AE07F2-8CE3-49C9-0AD0-44138A810128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0AE07F2-8CE3-49C9-0AD0-44138A810128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0AE07F2-8CE3-49C9-0AD0-44138A810128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1045ECB-3324-B32B-069E-89BE9C921E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1045ECB-3324-B32B-069E-89BE9C921E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1045ECB-3324-B32B-069E-89BE9C921E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1045ECB-3324-B32B-069E-89BE9C921E51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A9E9866-3ED8-DFDA-E563-62434FC3891C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A9E9866-3ED8-DFDA-E563-62434FC3891C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A9E9866-3ED8-DFDA-E563-62434FC3891C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A9E9866-3ED8-DFDA-E563-62434FC3891C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
